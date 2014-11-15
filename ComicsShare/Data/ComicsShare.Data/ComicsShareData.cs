@@ -2,8 +2,7 @@
 {
     using ComicsShare.Data.Common.Models;
     using ComicsShare.Data.Common.Repository;
-    using ComicsShare.Data.Models;
-    using ComicsShare.Data.Repositories;
+    using ComicsShare.Data.Models;    
     using System;
     using System.Collections.Generic;
     using System.Data.Entity;
@@ -67,23 +66,9 @@
         private IDeletableEntityRepository<T> GetDeletableEntityRepository<T>() where T : class, IDeletableEntity
         {
             if (!this.repositories.ContainsKey(typeof(T)))
-            {
-                if (typeof(T) == typeof(Series))
-                {
-                    var type = typeof(SeriesRepository);
-                    this.repositories.Add(typeof(T), Activator.CreateInstance(type, this.context));
-
-                }
-                else if (typeof(T) == typeof(Chapter))
-                {
-                    var type = typeof(ChapterRepository);
-                    this.repositories.Add(typeof(T), Activator.CreateInstance(type, this.context));
-                }
-                else
-                {
-                    var type = typeof(DeletableEntityRepository<T>);
-                    this.repositories.Add(typeof(T), Activator.CreateInstance(type, this.context));
-                }
+            {             
+                var type = typeof(DeletableEntityRepository<T>);
+                this.repositories.Add(typeof(T), Activator.CreateInstance(type, this.context));                
             }
 
             return (IDeletableEntityRepository<T>)this.repositories[typeof(T)];
