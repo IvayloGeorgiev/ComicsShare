@@ -283,6 +283,10 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Data\ComicsShare.Data.Common\ComicsShare.Data.Common.csproj">
+      <Project>{89e12b6b-5650-45b0-82e2-7d7466b04a05}</Project>
+      <Name>ComicsShare.Data.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Data\ComicsShare.Data.Models\ComicsShare.Data.Models.csproj">
       <Project>{175502d8-1aaf-402a-a899-695a9c0b48ed}</Project>
       <Name>ComicsShare.Data.Models</Name>
