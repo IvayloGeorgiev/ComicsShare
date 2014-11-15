@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComicsShare.Data.Models", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComicsShare.Data.Common", "Data\ComicsShare.Data.Common\ComicsShare.Data.Common.csproj", "{89E12B6B-5650-45B0-82E2-7D7466B04A05}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComicsShare.Web.Infrastructure", "Web\ComicsShare.Web.Infrastructure\ComicsShare.Web.Infrastructure.csproj", "{D7D0FDAC-71FA-43ED-9986-D222ADEA6818}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{89E12B6B-5650-45B0-82E2-7D7466B04A05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89E12B6B-5650-45B0-82E2-7D7466B04A05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89E12B6B-5650-45B0-82E2-7D7466B04A05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7D0FDAC-71FA-43ED-9986-D222ADEA6818}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7D0FDAC-71FA-43ED-9986-D222ADEA6818}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7D0FDAC-71FA-43ED-9986-D222ADEA6818}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7D0FDAC-71FA-43ED-9986-D222ADEA6818}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,5 +58,6 @@ Global
 		{AA5A68FE-DA10-4BA0-900F-1A6A7112DEDB} = {AE83E961-BC6D-49B9-9297-786CAC3BC3AA}
 		{175502D8-1AAF-402A-A899-695A9C0B48ED} = {AC3B8896-A9C6-4A6D-8320-E9E529D9E363}
 		{89E12B6B-5650-45B0-82E2-7D7466B04A05} = {AC3B8896-A9C6-4A6D-8320-E9E529D9E363}
+		{D7D0FDAC-71FA-43ED-9986-D222ADEA6818} = {AE83E961-BC6D-49B9-9297-786CAC3BC3AA}
 	EndGlobalSection
 EndGlobal

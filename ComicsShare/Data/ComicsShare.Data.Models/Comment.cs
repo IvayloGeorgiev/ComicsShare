@@ -16,7 +16,7 @@
 
         public int SeriesId { get; set; }
 
-        public Series Series { get; set; }
+        public virtual Series Series { get; set; }
 
         public bool IsDeleted { get; set; }
 

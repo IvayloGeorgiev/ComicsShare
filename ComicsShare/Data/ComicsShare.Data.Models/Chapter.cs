@@ -9,6 +9,11 @@ namespace ComicsShare.Data.Models
 
     public class Chapter : AuditInfo, IDeletableEntity
     {
+        public Chapter()
+        {
+            this.Pages = new HashSet<Page>();
+        }
+
         [Key]
         public int Id { get; set; }
 

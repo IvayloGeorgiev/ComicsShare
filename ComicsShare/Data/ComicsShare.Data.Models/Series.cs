@@ -8,6 +8,13 @@
 
     public class Series : AuditInfo, IDeletableEntity
     {
+        public Series()
+        {
+            this.Genres = new HashSet<Genre>();
+            this.Chapters = new HashSet<Chapter>();
+            this.Comments = new HashSet<Comment>();
+        }
+
         [Key]
         public int Id { get; set; }
 
